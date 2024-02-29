@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("publicKey:POp2jbrNOoYPRjWnA");
-        })();
-    </script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "POp2jbrNOoYPRjWnA",
+  });
+})();
+</script> 
 </head>
 
 <body>
@@ -99,6 +103,8 @@
         </div>
     </footer>
     <script src="assets/js/sendEmail.js"></script>
+
+
 </body>
 
 </html>

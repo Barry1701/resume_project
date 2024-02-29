@@ -1,5 +1,5 @@
 function sendMail(contactForm) {
-    emailjs.send("gmail", "rosie", {
+    emailjs.send("service_gh1u8ni", "template_ox3iw9d", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "project_request": contactForm.projectsummary.value
@@ -12,5 +12,5 @@ function sendMail(contactForm) {
             console.log("FAILED", error);
         }
     );
-     return false; 
+    return false;  
 }
